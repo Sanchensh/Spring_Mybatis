@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- Spring 整合 myBatis 后，这个配置文件基本可以不要了-->
+<!-- 设置外部配置文件 -->
+<!-- 设置类别名 -->
+<!-- 设置数据库连接环境 -->
+<!-- 映射文件 -->
+</configuration>
+
+
+
+
+<!-- <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	获取外部配置文件
+	<properties resource="config.properties" />
+	配置实体类的别名
+	<typeAliases>
+		将包取个别名
+		<package name="com.sm.bean"/>
+		<package name="com.sm.dao"/>
+	</typeAliases>
+	development: 开发模式 work: 工作模式
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	注册所有sql语句的xml文件
+	<mappers>
+	<mapper resource="com.sm.dao.userMapper"/>
+	</mappers>
+</configuration> -->
